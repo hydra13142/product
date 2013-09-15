@@ -18,7 +18,7 @@ four iterators of golang
     func NewArrange(l,t int) *Arrange
     func NewCombine(l,t int) *Combine
     
-    其中，l表示内部[]int切片的长度，而t表示取值范围为[0,t)
+其中，l表示内部[]int切片的长度，而t表示取值范围为[0,t)
 
 此外，它们还都实现了如下两个函数:
     
@@ -36,6 +36,7 @@ New...函数或者Init后，内部序列必然是满足要求的最小序列：
 
     Isolate、Ordered 为000....
     Arrange、Combine 为123....
-    每次调用Next()函数都向前查找返回第一个符合要求的序列
+
+每次调用Next()函数都向前查找返回第一个符合要求的序列
     
 本包主要用于暴力枚举，多次重复选择检验等，没有随机元素；属于无脑强上流。
